@@ -1,0 +1,1 @@
+Powered by smart contracts, BlockEdu is a decentralized autonomous organization designed to tokenize and democratize educational governance. It facilitates transparent funding mechanisms, verifiable credentials, and community consensus on educational resource development, built on a robust blockchain infrastructure.
