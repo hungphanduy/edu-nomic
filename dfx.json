@@ -1,23 +1,38 @@
 {
   "canisters": {
-    "backend": {
-      "main": "backend/app.mo",
-      "type": "motoko",
-      "args": "--enhanced-orthogonal-persistence"
+    "EduNomic_backend_token": {
+      "main": "src/EduNomic_backend/token_faucet/main.mo",
+      "type": "motoko"
     },
-    "frontend": {
-      "dependencies": ["backend"],
-      "frontend": {
-        "entrypoint": "frontend/index.html"
-      },
-      "source": ["frontend/dist"],
-      "type": "assets"
+    "EduNomic_backend_dao": {
+      "main": "src/EduNomic_backend/dao/main.mo",
+      "type": "motoko",
+      "dependencies": [
+        "EduNomic_backend_token"
+      ]
+    },
+    "EduNomic_frontend": {
+      "dependencies": [
+        "EduNomic_backend_token",
+        "EduNomic_backend_dao"
+      ],
+      "source": [
+        "src/EduNomic_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "EduNomic_frontend"
+    },
+    "internet_identity": {
+      "type": "pull",
+      "id": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": "mops sources"
     }
   },
   "output_env_file": ".env",
-  "defaults": {
-    "build": {
-      "packtool": "mops sources"
-    }
-  }
+  "version": 1
 }
