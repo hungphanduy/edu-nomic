@@ -1,6 +1,6 @@
 # `EduNomic`
 
-Welcome to your new `EduNomic` project and to the Internet Computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
+Powered by smart contracts, EduNomic is a decentralized autonomous organization designed to tokenize and democratize educational governance. It facilitates transparent funding mechanisms, verifiable credentials, and community consensus on educational resource development, built on a robust blockchain infrastructure.
 
 To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
 
